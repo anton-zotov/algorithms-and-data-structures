@@ -9,9 +9,9 @@ class QuickFind {
 
 	// O(1)
 	find(p, q) {
-		let united = this.id[p] === this.id[q];
-		console.log(`${p} - ${q}`, united);
-		return united;
+		let connected = this.id[p] === this.id[q];
+		console.log(`${p} - ${q}`, connected);
+		return connected;
 	}
 
 	// O(n)
