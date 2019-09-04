@@ -7,12 +7,14 @@ class QuickFind {
 		this.id = Array.from({length: n}, (_, i) => i);
 	}
 
+	// O(1)
 	find(p, q) {
 		let united = this.id[p] === this.id[q];
 		console.log(`${p} - ${q}`, united);
 		return united;
 	}
 
+	// O(n)
 	union(p, q) {
 		console.log(`connecting ${p}-${q}`);
 		this.id.forEach((component, i) => {
