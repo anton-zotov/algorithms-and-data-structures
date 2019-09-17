@@ -2,7 +2,7 @@
  * Weighted quick union algorithm
 */
 
-class QuickUnion {
+class WeightedQuickUnion {
 	constructor(n) {
 		this.id = Array.from({length: n}, (_, i) => i);
 		this.weights = Array(n).fill(1);
