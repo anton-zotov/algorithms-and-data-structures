@@ -15,6 +15,8 @@ function majorityVote(arr) {
 	}
 	return verifyMajor(arr, major) ? major : null;
 }
+exports.majorityVote = majorityVote;
+
 function verifyMajor(arr, major) {
 	count = 0;
 	for (let n of arr) {
@@ -23,8 +25,3 @@ function verifyMajor(arr, major) {
 	}
 	return false;
 }
-
-const arrWithMajor = [1, 1, 2, 1, 4, 5, 1, 0, 1];
-const arrWithoutMajor = [1, 2, 1, 4, 5, 1, 0, 1];
-console.log(`the major element in array ${arrWithMajor} is ${majorityVote(arrWithMajor)}`);
-console.log(`the major element in array ${arrWithoutMajor} is ${majorityVote(arrWithoutMajor)}`);
